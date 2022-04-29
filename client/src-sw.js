@@ -26,8 +26,6 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-//added not sure if correct or what it does
-
 // TODO: Implement asset caching
 // Set up asset cache
 const assetCache = new CacheFirst({
@@ -42,8 +40,8 @@ const assetCache = new CacheFirst({
 })
 
 offlineFallback({
-  urls: ['/index.html', '/'],
+  urls: ['offline.html', 'index.html', '/'],
   strategy: assetCache
 });
 
-registerRoute(({ request }) => request.mode === 'navigat', assetCache);
+registerRoute(({ request }) => request.mode === 'navigate', assetCache);
