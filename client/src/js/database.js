@@ -17,34 +17,34 @@ export const putDb = async (content) => {
   console.log('PUT in the database');
 
   //connection to databse plus version
-  const textDb = await openDB('jate', 1);
+  const valueDb = await openDB('jate', 1);
   //new transaction to and specify privileges
-  const text = textDb.transaction('jate', 'readwrite');
+  const value = valueDb.transaction('jate', 'readwrite');
   //open the object store
-  const store = text.objectStore('jate');
+  const store = value.objectStore('jate');
   //update database
-  const req = store.put({ text: content });
+  const req = store.put({ value: content });
   //confirm request
   const res = await req;
   console.log('Data saved to DB', res);
   return res; 
 }
 
-// TODO: Add logic for a method that gets all the content from the database -complete
+// TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   console.log('GET from the database');
 
   //connection to database plus version
-  const textDb = await openDB('jate', 1);
+  const valueDb = await openDB('jate', 1);
   //new transaction to and specify privileges
-  const text = textDb.transaction('jate', 'readonly');
+  const value = valueDb.transaction('jate', 'readonly');
   //open the object store
-  const store = text.objectStore('jate');
+  const store = value.objectStore('jate');
   //get all data
-  const req = store.getAll();
+  const req = await store.getAll();
   //confirm request
   const res = await req;
   console.log('res.value', res);
-  return res;
+  return res.value;
 }
 initdb();
