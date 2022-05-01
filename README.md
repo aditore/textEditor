@@ -2,9 +2,11 @@
 
 ## Description
 
-This progressive web application is a simple text editor that stores text in IndexedDB and</br>
-will reload the text if you leave the page. The text editor uses a webpack configuration to build itself and</br>
-works offline after a user installs the app from the deployed Heroku page.</br>
+This progressive web application is a simple text editor</br>
+that stores text in IndexedDB and will reload the text if you</br>
+leave the page. The text editor uses a webpack configuration</br>
+to build itself and works offline after a user installs the app</br>
+from the deployed Heroku page.</br>
 
 ## Learned
 
@@ -57,15 +59,19 @@ IndexedDB | workbox-expiration
 
 ## Usage
 
-Upon loading on the deployed Heroku page, click on the text editing section and type to see the code editor in action. Once the</br>
-editor has lost focused on itself, jate database within IndexedDB will store the typed out text into itself. Upon page reload</br>
+Upon loading on the deployed Heroku page, click on the text<br>
+editing section and type to see the code editor in action. Once the</br>
+editor has lost focused on itself, jate database within IndexedDB</br>
+will store the typed out text into itself. Upon page reload</br>
 the text can be found rendered and still there.</br>
 
-When clicking the install button, a window will prompt and ask if the user would like to download the progressive web application.<br>
-Select yes and an icon will appear on the desktop and allow the user to access the text editor at anytime, even while offline!</br>
+When clicking the install button, a window will prompt and ask if</br>
+the user would like to download the progressive web application.<br>
+Select yes and an icon will appear on the desktop and allow the user</br>
+to access the text editor at anytime, even while offline!</br>
 The text editor will function the same offline as it will online!</br>
 
-_Picture of the application while offline_
+_Picture of the application while offline_</br>
 ![textEditorOffline](./client/src/images/textEditor.png)
 
 ## Credits
