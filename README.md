@@ -65,6 +65,7 @@ When clicking the install button, a window will prompt and ask if the user would
 Select yes and an icon will appear on the desktop and allow the user to access the text editor at anytime, even while offline!</br>
 The text editor will function the same offline as it will online!</br>
 
+_Picture of the application while offline_
 ![textEditorOffline](./client/src/images/textEditor.png)
 
 ## Credits
